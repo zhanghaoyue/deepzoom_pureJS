@@ -2,11 +2,11 @@
 	<html lang="en">
 	<head>
 	  	<meta charset="UTF-8">
-	 	<title>{{slide_filename}}</title>
+	 	<title>Wholeslide Viewer Pure JS version</title>
 	 	<script type="text/javascript" src="static/jquery-3.2.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.11/js/uikit.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.11/js/uikit-icons.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.11/css/uikit.min.css" />
 	 	<script type="text/javascript" src="static/fabric.js"></script>
 	    <script type="text/javascript" src="static/openseadragon.min.js"></script>
 		<script type="text/javascript" src="static/FileSaver.js"></script>
@@ -71,13 +71,118 @@
 				</div>
 			</nav>
 		</div>
-		<div id="images">
-			<div class="current-slide">
-				<a class="load-slide" href="#" data-url="{{ slide_url }}"
-						data-mpp="{{ slide_mpp }}">Click to Reload Slide</a>
+		<div class = "uk-width-medium-1-5">
+			<div class="uk-panel uk-panel-box">
+	    		<h3 class="uk-panel-title">Slides by Patient</h3>
+	    		<ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav="">
+	            	<li class="uk-active"><a href="#">Current Patients</a></li>
+
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 1</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 2</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 3</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 4</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 5</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 6</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 7</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 8</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 9</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 10</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 11</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 12</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 13</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 14</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 15</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 16</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 17</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 18</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 19</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 20</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 21</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 22</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 23</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 24</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 25</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 26</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 27</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 28</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 29</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 30</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 31</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 32</a>
+	                </li>
+	                <li class="uk-parent" aria-expanded="false">
+	                	<a href="#"><i class="uk-icon-star"></i>Patient 33</a>
+	                </li>
+	            </ul>
 			</div>
+        <div id="view" class="uk-container uk-width-medium-4-5">
+        </div>
 		</div>
-        <div id="view" class="uk-container" style="height:1080px; width:1200px"></div>
+
+
 	</body>    
 
  	<script type="text/javascript">

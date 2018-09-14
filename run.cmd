@@ -1,0 +1,2 @@
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files file:///%cd%/demo.html
+if errorlevel 1 (for /f "delims=" %a in ('dir /b /a-d /s "c:\chrome.exe"') do "%~fa" --allow-file-access-from-files file:///%cd%/demo.html)
