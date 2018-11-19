@@ -5,6 +5,7 @@
 	 	<title>Wholeslide Viewer Pure JS version</title>
 	 	<script type="text/javascript" src="static/jquery-3.2.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/sticky.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/js/bootstrap-tour-standalone.min.js"></script>
 	 	<script type="text/javascript" src="static/fabric.js"></script>
 	    <script type="text/javascript" src="static/openseadragon.min.js"></script>
@@ -15,20 +16,23 @@
 		<script type="text/javascript" src="static/openseadragon-fabricjs-overlay.js"></script>
 		<script type="text/javascript" src="static/openseadragon-imaginghelper.js"></script>
 		<script type="text/javascript" src="src/js/image_data_location.js"></script>
+		<script type="text/javascript" src="src/js/Res_73_nms.js"></script>
+		<script type="text/javascript" src="src/js/Res_293_nms.js"></script>
 		<script type="text/javascript" src="src/js/main.js"></script>
 		<link rel="stylesheet" href="static/css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/sticky.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/css/bootstrap-tour-standalone.min.css" />
 	</head>
 	<body>
 
-		<div uk-sticky="offset: 100" class = "uk-navbar-container uk-sticky uk-sticky-fixed">
+		<div class = "uk-navbar-container" data-uk-sticky>
 			<div class="uk-marin">
 				<nav class = "uk-navbar">		
 					<div class="uk-navbar-nav">
 						<button id='patient_button' class="uk-button uk-button-primary uk-margin-small-left" data-uk-offcanvas="{target:'#offcanvas-menu', mode:'slide'}"><i class="uk-icon-bars"></i> Patients</button>
 						<a href="https://www.mii.ucla.edu/" class = "uk-logo">
-							<img src="http://www.mii.ucla.edu/images/logos/logo.svg" class = "uk-margin-small-right uk-svg">
+							<img src="static/cid_logo.png" width='250px' class = "uk-margin-small-right uk-svg">
 							<div class="'uk-text-middle" style="color:black">Wholeslide Image Viewer</div>
 						</a>
 						<button id='tutorial_button' class="uk-button uk-button-secondary uk-margin-small-left"><i class="uk-icon-bell"></i> Tutorials</button>	
@@ -121,7 +125,7 @@
 				</div>	
 		</div>
 
-		<div id="view" class="uk-container" style="height: 100vh; width: 100vw"></div>
+		<div id="view" style="height:980px; width:1850px;"></div>
 
 	</body>    
 </html>
