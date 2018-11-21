@@ -45,7 +45,7 @@ App = {
 		viewer = new OpenSeadragon({
 		    id:  "view",
 		    tileSources: [slide_url],
-		    prefixUrl: "static/images/",
+		    prefixUrl: "../static/images/",
 		    sequenceMode: true,
 			showReferenceStrip: true,
 		    showNavigator: true,
